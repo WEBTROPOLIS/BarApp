@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.barapp.databinding.FragmentAddItemTableBinding
+import com.example.barapp.viewmodel.TablesViewModel
 
 class AddItemTableFragment : Fragment() {
 

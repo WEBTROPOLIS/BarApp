@@ -5,7 +5,7 @@
     android:id="@+id/frameAddTable"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTableFragment"
+    tools:context=".view.AddTableFragment"
     android:orientation="vertical"
     android:padding="16dp">
 

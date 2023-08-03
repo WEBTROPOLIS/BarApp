@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.model
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -36,7 +36,7 @@ interface TableDao {
     fun getDetailsTable(tableId:Int):LiveData<List<DetailsData>>
 
     @Query("SELECT * FROM table_data WHERE id = :tableId")
-    suspend fun getOneTable(tableId:Int):TableData?
+    suspend fun getOneTable(tableId:Int): TableData?
 
     @Query("DELETE FROM DETAILS_DATA WHERE tableID = :id")
    suspend fun cleanTable(id:Int) : Int

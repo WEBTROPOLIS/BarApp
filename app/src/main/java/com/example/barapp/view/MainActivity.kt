@@ -1,11 +1,14 @@
-package com.example.barapp
+package com.example.barapp.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.barapp.viewmodel.OnClickListenerTable
+import com.example.barapp.model.TableData
+import com.example.barapp.viewmodel.TablesAdapter
 import com.example.barapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(),OnClickListenerTable {
+class MainActivity : AppCompatActivity(), OnClickListenerTable {
 
     private lateinit var mBinding : ActivityMainBinding
     private lateinit var mGridLayout : GridLayoutManager
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity(),OnClickListenerTable {
 
     private fun launchFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(mBinding.frame.id,TablesFragment())
+            .replace(mBinding.frame.id, TablesFragment())
             .addToBackStack(null)
             .commit()
     }

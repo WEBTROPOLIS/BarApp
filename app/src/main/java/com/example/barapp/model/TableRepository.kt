@@ -1,6 +1,9 @@
-package com.example.barapp
+package com.example.barapp.model
 
 import androidx.lifecycle.LiveData
+import com.example.barapp.model.DetailsData
+import com.example.barapp.model.TableDao
+import com.example.barapp.model.TableData
 
 class TableRepository(private val tableDao: TableDao) {
 

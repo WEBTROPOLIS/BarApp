@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,17 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.barapp.model.DetailsData
+import com.example.barapp.viewmodel.OnClickListenerItem
+import com.example.barapp.R
+import com.example.barapp.model.TableData
+import com.example.barapp.viewmodel.TablesViewModel
 import com.example.barapp.databinding.FragmentDetailsTableBinding
+import com.example.barapp.viewmodel.DetailsAdapter
 import kotlinx.coroutines.launch
 
 
-class DetailsTableFragment : Fragment(),OnClickListenerItem {
+class DetailsTableFragment : Fragment(), OnClickListenerItem {
 
     private lateinit var mBinding : FragmentDetailsTableBinding
     private val viewModel: TablesViewModel by viewModels()

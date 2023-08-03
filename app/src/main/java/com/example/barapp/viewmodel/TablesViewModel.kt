@@ -1,9 +1,13 @@
-package com.example.barapp
+package com.example.barapp.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.barapp.model.DetailsData
+import com.example.barapp.model.TableData
+import com.example.barapp.model.TableDatabase
+import com.example.barapp.model.TableRepository
 import kotlinx.coroutines.launch
 
 class TablesViewModel(application: Application) : AndroidViewModel(application) {
@@ -45,7 +49,7 @@ class TablesViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-   suspend fun getOneTable(id: Int):TableData?{
+   suspend fun getOneTable(id: Int): TableData?{
         return tableRepository.getOneTable(id)
     }
 

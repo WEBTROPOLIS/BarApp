@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.model
 
 import android.content.Context
 import androidx.room.Database
@@ -13,7 +13,7 @@ abstract class TableDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: TableDatabase? = null
 
-        fun getDatabase(context: Context): TableDatabase{
+        fun getDatabase(context: Context): TableDatabase {
             return INSTANCE ?: synchronized(this){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,

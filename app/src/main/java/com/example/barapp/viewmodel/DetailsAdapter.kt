@@ -1,8 +1,9 @@
-package com.example.barapp
+package com.example.barapp.viewmodel
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.barapp.model.DetailsData
 import com.example.barapp.databinding.ItemDetailsBinding
 
 class DetailsAdapter(private var detailsList: List<DetailsData>,

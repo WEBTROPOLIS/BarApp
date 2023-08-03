@@ -1,4 +1,6 @@
-package com.example.barapp
+package com.example.barapp.viewmodel
+
+import com.example.barapp.model.DetailsData
 
 interface OnClickListenerItem {
 

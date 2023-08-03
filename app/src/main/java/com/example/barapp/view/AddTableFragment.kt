@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.view
 
 import android.content.Context
 import android.os.Bundle
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.barapp.model.TableData
+import com.example.barapp.viewmodel.TablesViewModel
 import com.example.barapp.databinding.FragmentAddTableBinding
 
 

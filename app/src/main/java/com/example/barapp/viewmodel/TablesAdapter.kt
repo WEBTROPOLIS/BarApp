@@ -1,4 +1,4 @@
-package com.example.barapp
+package com.example.barapp.viewmodel
 
 import android.content.Context
 import android.graphics.Color
@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.barapp.R
+import com.example.barapp.view.TablesFragment
 import com.example.barapp.databinding.ItemTablesBinding
+import com.example.barapp.model.TableData
 
 class TablesAdapter(private var tables: MutableList<TableData>,
-                    private var listener: com.example.barapp.OnClickListenerTable,
+                    private var listener: OnClickListenerTable,
                     private var context: Context,
                     private var viewModel: TablesViewModel,
                     private var fragment: TablesFragment
